@@ -21,7 +21,7 @@ This is a virtual machine (VM) implemented in Rust that allows you to execute tr
 
 # Usage
 - To use the VM, create a new instance of the MyVirtualMachine struct and use its methods to create new accounts and execute transactions: 
-
+'''
 use zk_vm::{
     codec::{Codec, Decode, Encode},
     execution::{Execution, Executable},
@@ -67,7 +67,7 @@ let sender_account = vm.get_account(sender_keypair.public).unwrap();
 assert_eq!(sender_account.balance, 900);
 let recipient_account = vm.get_account(recipient_keypair.public).unwrap();
 assert_eq!(recipient_account.balance, 100);
-
+'''
 
 You can also execute other types of transactions, such as smart contract transactions, multi-asset transactions, and decentralized governance transactions, using the same process.
 
