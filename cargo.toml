@@ -1,0 +1,2 @@
+[dependencies]
+avalanche_sdk = { version = "0.8", features = ["avalanche_types"] }
