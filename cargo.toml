@@ -1,2 +1,16 @@
+[package]
+name = "bulletproofvm"
+version = "0.1.0"
+authors = ["Usman Asim <usmanasim27@gmail.com>"]
+
 [dependencies]
-avalanche_sdk = { version = "0.8", features = ["avalanche_types"] }
+avalanche-sdk = { version = "0.87.0"}
+avalanche-types = { version = "0.0.181"}
+
+[workspace]
+members = [
+    # avalanche-types,
+    # avalanche-sdk,
+]   
+[lib]
+path = "src/lib.rs"
