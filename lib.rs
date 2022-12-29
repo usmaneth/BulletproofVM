@@ -1,4 +1,4 @@
-use avalanche_sdk::{
+use avalanche-types::{
     core::{
         codec::{Codec, Decode, Encode},
         Executable, Execution,
